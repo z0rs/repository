@@ -7,9 +7,6 @@
   <h1>Index of /</h1>
   <ul>
     {% for file in site.static_files %}
-      {% if file.path contains '/_site/' %}
-        {% continue %}
-      {% endif %}
       <li><a href="{{ file.path }}">{{ file.path }}</a></li>
     {% endfor %}
   </ul>
